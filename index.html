@@ -15,6 +15,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="index.css">
+  <script src="https://kit.fontawesome.com/63a6ca55fa.js" crossorigin="anonymous" ></script>
+    
   <title>Weather Report</title>
 </head>
 
@@ -29,14 +31,14 @@
       <div class="col-sm mt-3 me-5 rounded-3 p-4 shadow text-center position-relative">
 
         <form  class="position-absolute top-50 start-50 translate-middle">
-          <label for="exampleInputEmail1" class="form-label">Select City</label>
-          <input type="text" class="form-control" placeholder="Delhi.Mumbai etc." aria-describedby="emailHelp">
-          <button type="button " class="btn  mt-3 mb-3" onclick="getWeather(event)">Search</button>
+          <label for="cityweather" class="form-label">Select City</label>
+          <input type="text" class="form-control" id="cityweather" placeholder="Delhi.Mumbai etc." aria-describedby="emailHelp">
+          <button type="button "  class="btn  mt-3 mb-3" onclick="getWeather(event)">Search</button>
         </div>
         
-        <div class="col-sm mt-3  ms-5 text-center  rounded-3 shadow p-4">
+        <div id="print" class="col-sm mt-3  ms-5 text-center   rounded-3 shadow p-4">
           
-          One of three columns
+          
 
       </div>
 
