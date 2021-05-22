@@ -8,7 +8,7 @@ function getWeather(event) {
     event.preventDefault();
     const city = document.getElementById('cityweather').value;
     console.log(city);
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${config.WEATHER_API_KEY}&units=metric`)
+    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${process.env.WEATHER_API_KEY || config.WEATHER_API_KEY}&units=metric`)
         .then((apidata) => {
             console.log(apidata)
             return apidata.json();
