@@ -39,7 +39,7 @@ function getWeather(event) {
 
 
 
-            document.getElementById('print').innerHTML = `Temperature = ${temp} °C ${icon} <br> sunrise ${localTimestring()}  <br> sunset=${localTimestring()} <br> Max Temperature=${maxTemp} <br> Min Temperature=${minTemp} <br> Humidity=${humidity} <br> `;
+            document.getElementById('print').innerHTML = `Temperature = ${temp} °C ${icon} <br> sunrise = ${sunriseTime}  <br> sunset=${sunsetTime} <br> Max Temperature=${maxTemp} <br> Min Temperature=${minTemp} <br> Humidity=${humidity} <br> `;
 
 
 
